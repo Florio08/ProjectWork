@@ -8,8 +8,8 @@ namespace ProjectWork1._0.Views;
 
 public partial class SchermataVisualizzazioneFormule : ContentPage
 {
-	private GradoScolastico grado;
-	private Materia materia;
+	//private GradoScolastico grado;
+	//private Materia materia;
 
 /* Modifica senza merge dal progetto 'ProjectWork1.0 (net8.0-windows10.0.19041.0)'
 Prima:
@@ -19,6 +19,7 @@ Dopo:
 	FormuleService caricamentoContenuti = new FormuleViewModel();
 	public SchermataVisualizzazioneFormule(GradoScolastico grado, Materia materia)
 */
+/*
 	FormuleService _formulaService = new FormuleService("formule.json");
 	public SchermataVisualizzazioneFormule(GradoScolastico grado, Materia materia)
 	{
@@ -27,6 +28,7 @@ Dopo:
 		this.materia = materia;
 		//CaricaFormule();
 	}
+*/
 
 	/*private void CaricaFormule()
 	{
@@ -45,10 +47,43 @@ Dopo:
         }
     }*/
 
+    /*
     private async void OnBackButtonClicked(object sender, EventArgs e)
 	{
         await Navigation.PushAsync(new SchermataVisualizzazioneFormule(grado, materia));
     }
-	
+    */
+
+
+
+
+    private readonly FormuleViewModel viewModel;
+
+    public SchermataVisualizzazioneFormule(GradoScolastico grado, Materia materia)
+    {
+        /*
+        InitializeComponent();
+        viewModel = new FormuleViewModel(new FormuleService());
+        BindingContext = viewModel;
+        viewModel.Carica(grado, materia);
+        */
+        InitializeComponent();
+
+        // Percorso file JSON: metti il nome corretto del tuo file
+        string filePath = Path.Combine(FileSystem.AppDataDirectory, "formule.json");
+
+        viewModel = new FormuleViewModel(new FormuleService(filePath));
+        BindingContext = viewModel;
+
+        viewModel.Carica(grado, materia);
+
+    }
+
+    private void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        Navigation.PopAsync();
+    }
+
+
 
 }
