@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ProjectWork1._0.Models.Formula">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAQAAAQAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Models\Formula.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectWork1._0.View_Models.FormuleViewModel" Collapsed="true">
+    <Position X="0.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View Models\FormuleViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectWork1._0.View_Models.SceltaGradoViewModel" Collapsed="true">
+    <Position X="0.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View Models\SceltaGradoViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectWork1._0.View_Models.SceltaMateriaViewModel" Collapsed="true">
+    <Position X="2.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View Models\SceltaMateriaViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectWork1._0.Views.SchermataIniziale">
+    <Position X="7.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\SchermataSelezioneGradoScolastico.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectWork1._0.Views.SchermataSelezioneMateria">
+    <Position X="9" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\SchermataSelezioneMateria.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectWork1._0.Views.SchermataVisualizzazioneFormule">
+    <Position X="7.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\SchermataVisualizzazioneFormule.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ProjectWork1._0.Models.GradoScolastico">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAQAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Models\Formula.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ProjectWork1._0.Models.Materia">
+    <Position X="8.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Models\Formula.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
