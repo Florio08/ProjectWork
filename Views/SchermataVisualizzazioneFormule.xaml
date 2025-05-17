@@ -5,7 +5,10 @@
              xmlns:vm="clr-namespace:ProjectWork1._0.View_Models"
              x:Class="ProjectWork1._0.Views.SchermataVisualizzazioneFormule"
              x:DataType="vm:FormuleViewModel"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              Title="SchermataVisualizzazioneFormule">
+
+
     <VerticalStackLayout>
         <Button
          Clicked="OnBackButtonClicked"
@@ -17,15 +20,15 @@
          WidthRequest="50">
         </Button>
 
-        <!-- CollectionView Raggruppata -->
+        <!-- ✅ CollectionView Raggruppata -->
         <CollectionView ItemsSource="{Binding FormuleRaggruppate}" IsGrouped="True">
             <CollectionView.GroupHeaderTemplate>
                 <DataTemplate x:DataType="models:FormulaGroup">
                     <Label Text="{Binding Titolo}"
-                       FontSize="20"
-                       FontAttributes="Bold"
-                       Padding="10"
-                       BackgroundColor="LightGray"/>
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           Padding="10"
+                           BackgroundColor="LightGray"/>
                 </DataTemplate>
             </CollectionView.GroupHeaderTemplate>
 

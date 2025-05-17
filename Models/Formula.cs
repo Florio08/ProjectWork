@@ -31,5 +31,4 @@ namespace ProjectWork1._0.Models
             return Titolo;
         }
     }
-
 }

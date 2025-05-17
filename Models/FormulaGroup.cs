@@ -8,12 +8,11 @@ namespace ProjectWork1._0.Models
 {
     public class FormulaGroup : List<Formula>
     {
-        public string Titolo { get; }
+        public string Titolo { get; set; }
 
         public FormulaGroup(string titolo, IEnumerable<Formula> formule) : base(formule)
         {
             Titolo = titolo;
         }
-
     }
 }
