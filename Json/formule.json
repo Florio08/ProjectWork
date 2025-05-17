@@ -214,5 +214,23 @@
     "Materia": "ALGEBRA",
     "Titolo": "Operazioni tra Polinomi",
     "Descrizione": "Addizione: La somma tra due o più polinomi è la somma algebrica dei termini del primo polinomio con quelli del secondo.\nEsempio: (9ab + 3a) + (3ab + 9a) = 12ab + 12a\nSottrazione: La sottrazione tra due o più polinomi è la differenza algebrica dei termini del primo polinomio con quelli del secondo.\nEsempio: (9ab + 3a) - (8ab + 2a) = ab + a\nMoltiplicazione: Il prodotto di due o più polinomi è la somma dei prodotti di ognuno dei termini del primo polinomio per ciascuno dei termini del secondo.\nEsempio: (3x + y) * (x - 2y) = 3x * x + 3x * (-2y) + y * x + y * (-2y) = 3x^2 -5xy -2y^2"
+  },
+  {
+    "Grado": "SUPERIORI",
+    "Materia": "GONIOMETRIA",
+    "Titolo": "Formule",
+    "Descrizione": "Fomule di Goniometria: \n- sen²a + cos²a = 1 \n- sen²a = 1 - cos²a \n- cos²a = 1 - sen²a \n- tg a = sen a/cos a \n-ctg a = cos a/sen a \n-sec a = 1/cos a \n- cosec a = 1/sen a \n- sen (a ± b) = sen a cos b ± sen b cos a \n- cos (a ± b) = cos a cos b ± sen a sen b \n- tg (a ± b) = tg a ± tg b/1 ± tg a tg b \n- tg 2a = 2tg a/1 - tg²a \n- sen 2a = 2sen a cos a \n- cos 2a =\n cos²a - sen²a\n 2cos²a - 1\n 1 - 2sen²a \n- sen a/2 = ±√1 - cos a/2 \n- cos a/2 = ±√1 + cos a/2 \n- tg a/2 = ±√1 - cos a/1 + cos a \n- t = tg a/2 \n- sen a = 2t/1 + t² \n- cos a = 1 - t²/1 + t²"
+  },
+  {
+    "Grado": "SUPERIORI",
+    "Materia": "GEOMETRIA",
+    "Titolo": "Criteri di Congruenza dei Triangoli",
+    "Descrizione": "Due triangoli si dicono congruenti quando hanno la stessa forma e le stesse dimensioni.\n\nPer stabilire se due triangoli sono congruenti, si possono usare i seguenti criteri di congruenza:\n\n- Criterio Lato-Lato-Lato (LLL):\n  Due triangoli sono congruenti se hanno tutti e tre i lati rispettivamente congruenti.\n\n- Criterio Lato-Angolo-Lato (LAL):\n  Due triangoli sono congruenti se hanno due lati e l’angolo compreso tra essi rispettivamente congruenti.\n\n- Criterio Angolo-Lato-Angolo (ALA):\n  Due triangoli sono congruenti se hanno un lato e i due angoli adiacenti rispettivamente congruenti.\n\n- Criterio Lato-Angolo-Angolo (LAA):\n  Due triangoli sono congruenti se hanno un lato e due angoli, anche non adiacenti, rispettivamente congruenti.\n\n- Criterio di congruenza nei triangoli rettangoli (ipotenusa-cateto):\n  Due triangoli rettangoli sono congruenti se hanno l’ipotenusa e un cateto rispettivamente congruenti.\n\nQuesti criteri permettono di dimostrare la congruenza senza dover confrontare tutti gli elementi dei triangoli."
+  },
+  {
+    "Grado": "SUPERIORI",
+    "Materia": "GEOMETRIA",
+    "Titolo": "Teorema di Talete",
+    "Descrizione": "Il Teorema di Talete afferma che se in un triangolo si traccia una retta parallela a uno dei lati, essa divide gli altri due lati in segmenti proporzionali.\n\nIn modo più generale: se due o più rette parallele tagliano due trasversali, allora determinano su di esse segmenti proporzionali.\n\nIn simboli: se le rette parallele incontrano le trasversali nei punti A, B, C e nei punti A', B', C' rispettivamente, allora vale la proporzione AB/BC = A'B'/B'C'.\n\nCondizioni per applicare il Teorema di Talete:\n- Le rette devono essere parallele.\n- Devono essere tagliate da almeno due trasversali.\n- I punti devono essere ordinati nello stesso verso su entrambe le trasversali.\n\nQuesto teorema è utile per calcolare lunghezze mancanti in figure geometriche con rette parallele e trasversali."
   }
 ]
