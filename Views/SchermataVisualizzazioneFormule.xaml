@@ -21,8 +21,8 @@
         </Button>
 
         <!-- ✅ CollectionView Raggruppata -->
-        <CollectionView ItemsSource="{Binding FormuleRaggruppate}" IsGrouped="True">
-            <CollectionView.GroupHeaderTemplate>
+        <CollectionView ItemsSource="{Binding FormuleRaggruppate}">
+            <!--CollectionView.GroupHeaderTemplate>
                 <DataTemplate x:DataType="models:FormulaGroup">
                     <Label Text="{Binding Titolo}"
                            FontSize="20"
@@ -30,7 +30,7 @@
                            Padding="10"
                            BackgroundColor="LightGray"/>
                 </DataTemplate>
-            </CollectionView.GroupHeaderTemplate>
+            </CollectionView.GroupHeaderTemplate-->
 
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="models:Formula">

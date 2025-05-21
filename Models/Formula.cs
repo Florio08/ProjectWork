@@ -21,8 +21,10 @@ namespace ProjectWork1._0.Models
     }
     public class Formula
     {
-        public GradoScolastico Grado { get; set; }
-        public Materia Materia { get; set; }
+        //public GradoScolastico Grado { get; set; }
+        //public Materia Materia { get; set; }
+        public string Grado { get; set; }
+        public string Materia { get; set; }
         public string Titolo { get; set; }
         public string Descrizione { get; set; }
 

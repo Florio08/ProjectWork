@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using ProjectWork1._0.Infrastructure;
 using ProjectWork1._0.Models;
 using System;
 using System.Collections.Generic;
@@ -7,36 +8,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace ProjectWork1._0.View_Models
 {
     public class FormuleViewModel
     {
-        
-        private readonly FormuleService service;
 
-        public ObservableCollection<FormulaGroup> FormuleRaggruppate { get; set; }
+        public ObservableCollection<Formula> FormuleRaggruppate { get; set; }
 
-        public FormuleViewModel(FormuleService service)
+        public FormuleViewModel()
         {
-            this.service = service;
-            FormuleRaggruppate = new ObservableCollection<FormulaGroup>();
+            FormuleRaggruppate = new ObservableCollection<Formula>();
         }
 
         public void Carica(GradoScolastico grado, Materia materia)
         {
-            var formule = service.CaricaFormule(grado, materia);
-
-            Console.WriteLine($"🔎 Caricate {formule.Count} formule per {grado} - {materia}");
-
-            var gruppi = formule
-                .GroupBy(f => f.Titolo)
-                .Select(g => new FormulaGroup(g.Key, g));
+            var formule = FormulaService.CaricaFormule(grado, materia);
 
             FormuleRaggruppate.Clear();
 
-            foreach (var gruppo in gruppi)
+            foreach (var gruppo in formule)
             {
-                Console.WriteLine($"📂 Gruppo: {gruppo.Titolo} con {gruppo.Count} formule");
                 FormuleRaggruppate.Add(gruppo);
             }
         }

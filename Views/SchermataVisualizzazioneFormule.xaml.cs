@@ -21,11 +21,13 @@ public partial class SchermataVisualizzazioneFormule : ContentPage
         InitializeComponent();
 
         // Percorso file JSON: metti il nome corretto del tuo file
-        string filePath = Path.Combine(FileSystem.AppDataDirectory, "formule.json");
-        Console.WriteLine("?? Percorso del file JSON usato:");
-        Console.WriteLine(filePath);
+        string filePath = FileSystem.OpenAppPackageFileAsync("formule.json").Result.ToString();
+        
+        
+       // Console.WriteLine("?? Percorso del file JSON usato:");
+       // Console.WriteLine(filePath);
 
-        viewModel = new FormuleViewModel(new FormuleService(filePath));
+        viewModel = new FormuleViewModel();
         BindingContext = viewModel;
 
         viewModel.Carica(grado, materia);
