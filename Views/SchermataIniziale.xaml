@@ -5,10 +5,11 @@
     <VerticalStackLayout Margin="20,5" Spacing="10" >
 
         <!-- Immagine -->
-        <Image Source="tua_immagine.png"
+        <Image Source="logo.png"
                HorizontalOptions="Center"
                HeightRequest="150"
-               WidthRequest="150" />
+               WidthRequest="150" 
+               />
 
         <!-- Etichetta -->
         <Label Text="FORMULARIO DI MATEMATICA"

@@ -59,7 +59,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Json\formule.json" />
+	  <AndroidResource Remove="Json\**" />
+	  <Compile Remove="Json\**" />
+	  <EmbeddedResource Remove="Json\**" />
+	  <MauiCss Remove="Json\**" />
+	  <MauiXaml Remove="Json\**" />
+	  <None Remove="Json\**" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -95,10 +100,6 @@
 	  <MauiXaml Update="Views\SchermataVisualizzazioneFormule.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Json\" />
 	</ItemGroup>
 
 </Project>
