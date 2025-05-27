@@ -2,9 +2,13 @@ using ProjectWork1._0.Models;
 
 namespace ProjectWork1._0.Views;
 
+//Funzioni principali:
+//-Gestisce la selezione della materia.
+//-Porta alla pagina successiva(quella delle formule)
 public partial class SchermataSelezioneMateria : ContentPage
 {
     private GradoScolastico grado;
+
 	public SchermataSelezioneMateria(GradoScolastico grado)
 	{
 		InitializeComponent();
@@ -16,9 +20,7 @@ public partial class SchermataSelezioneMateria : ContentPage
             btnGoniometria.IsVisible = true;
         }
 	}
-    //Funzioni principali:
-    //-Gestisce la selezione della materia.
-    //-Porta alla pagina successiva(quella delle formule)
+
     private void OnBtnAlgebraClicked(object sender, EventArgs e)
     {
         var materia = Materia.ALGEBRA;
@@ -26,11 +28,13 @@ public partial class SchermataSelezioneMateria : ContentPage
         // Ad esempio, naviga a un'altra pagina o esegui un'operazione
         Navigation.PushAsync(new SchermataVisualizzazioneFormule(grado, materia));
     }
+
     private void OnBtnGeometriaClicked(object sender, EventArgs e)
     {
         var materia = Materia.GEOMETRIA;
         Navigation.PushAsync(new SchermataVisualizzazioneFormule(grado, materia));
     }
+
     private void OnBtnGoniometriaCkicked(object sender, EventArgs e)
     {
         var materia = Materia.GONIOMETRIA;
@@ -41,5 +45,4 @@ public partial class SchermataSelezioneMateria : ContentPage
     {
         await Navigation.PushAsync(new SchermataSelezioneMateria(grado));
     }
-
 }

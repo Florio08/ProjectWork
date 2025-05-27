@@ -12,51 +12,42 @@ using System.Threading.Tasks;
 using System.Text.Json;
 namespace ProjectWork1._0.Infrastructure
 {
+    // Classe statica che gestisce il caricamento e il filtraggio delle formule dal file JSON
     public static class FormulaService
     {
+        // Legge il file JSON contenente tutte le formule e lo deserializza in una lista di oggetti Formula
         public static List<Formula> CreaListaFormule()
         {
             try
             {
+                // Utilizza FileSystem per aprire il file formule.json all'interno del pacchetto dell'app
                 using var stream = FileSystem.OpenAppPackageFileAsync("formule.json").Result;
                 using var reader = new StreamReader(stream);
-                string jsonAllFormule = reader.ReadToEnd();                
 
+                // Legge tutto il contenuto del file JSON
+                string jsonAllFormule = reader.ReadToEnd();
+
+                // Deserializza il JSON in una lista di oggetti Formula
                 var formule = JsonSerializer.Deserialize<List<Formula>>(jsonAllFormule);
 
+                // Se la deserializzazione ha successo, restituisce la lista; altrimenti una lista vuota
                 return formule ?? new List<Formula>();
             }
             catch (Exception ex)
             {
-                //Console.WriteLine($"Errore durante la lettura del file JSON: {ex.Message}");
                 return new List<Formula>();
             }
         }
-
-        //Funzioni principali:
-        //-Mostra le formule/dimostrazioni filtrandole per il grado e la materia selezionati.
+        // Metodo per caricare le formule filtrate in base al grado scolastico e alla materia
         public static List<Formula> CaricaFormule(GradoScolastico grado, Materia materia)
         {
-            
-            //JsonSerializer.Deserialize<List<Formula>>(json) ?? new List<Formula>();
+            // Recupera tutte le formule dal file JSON
             var formule = CreaListaFormule();
-                return formule
+
+            // Filtra le formule in base al grado scolastico e alla materia specificati
+            return formule
                     .Where(formula => formula.Materia ==Enum.GetName(materia) && formula.Grado == Enum.GetName(grado))
                     .ToList();
-
-
-            /*
-            //controllo se esiste prima di leggere il file, in caso esco col return 
-            if (!File.Exists(fileName)) return ListaDiFormuleVuota();
-            //leggo il file Json 
-            string fileJson = File.ReadAllText(fileName);
-            List<Formula>? formule = JsonSerializer.Deserialize<List<Formula>>(fileJson);
-            if (formule == null) return ListaDiFormuleVuota();
-            
-            return formule!
-                .Where(formula => formula.Materia == materia && formula.Grado == grado
-            ).ToList();
-            */
         }
     }
 }

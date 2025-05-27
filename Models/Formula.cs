@@ -19,15 +19,15 @@ namespace ProjectWork1._0.Models
         GEOMETRIA,
         GONIOMETRIA
     }
+    // Rappresenta una formula
     public class Formula
     {
-        //public GradoScolastico Grado { get; set; }
-        //public Materia Materia { get; set; }
         public string Grado { get; set; }
         public string Materia { get; set; }
         public string Titolo { get; set; }
         public string Descrizione { get; set; }
 
+        // Restituisce il titolo della formula come rappresentazione testuale dell'oggetto
         public override string ToString()
         {
             return Titolo;
